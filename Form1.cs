@@ -189,7 +189,7 @@ namespace Password_Generator
             history_text.Text += (string.Format("{0}\r\n", password));
             if (genTxt_check.Checked)
             {
-                if (txtPath_text.Text == "" || !(txtFileName_text.Text.Split('.').Contains("txt")) || !(Directory.Exists(txtPath_text.Text)) || !(txtPath_text.Text.All(char.IsLetterOrDigit)) || !(txtFileName_text.Text.All(char.IsLetterOrDigit)))
+                if (txtPath_text.Text == "" || !(Directory.Exists(txtPath_text.Text)))
                 {
                     MessageBox.Show("Path or file name not valid");
                 } else
