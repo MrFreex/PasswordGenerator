@@ -32,6 +32,9 @@
             this.charNum_text = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtFileName_text = new System.Windows.Forms.TextBox();
+            this.txtPath_text = new System.Windows.Forms.TextBox();
             this.txt_browse_btn = new System.Windows.Forms.Button();
             this.genTxt_check = new System.Windows.Forms.CheckBox();
             this.onlyalfanum_check = new System.Windows.Forms.CheckBox();
@@ -41,9 +44,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.clear_btn = new System.Windows.Forms.Button();
             this.gen_btn = new System.Windows.Forms.Button();
-            this.txtPath_text = new System.Windows.Forms.TextBox();
-            this.txtFileName_text = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,6 +82,37 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Settings";
             // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(571, 18);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(244, 38);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Txt File name";
+            // 
+            // txtFileName_text
+            // 
+            this.txtFileName_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtFileName_text.Location = new System.Drawing.Point(576, 59);
+            this.txtFileName_text.Name = "txtFileName_text";
+            this.txtFileName_text.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.txtFileName_text.Size = new System.Drawing.Size(288, 35);
+            this.txtFileName_text.TabIndex = 4;
+            this.txtFileName_text.Text = "passGen.txt";
+            this.txtFileName_text.TextChanged += new System.EventHandler(this.txtFileName_text_TextChanged);
+            // 
+            // txtPath_text
+            // 
+            this.txtPath_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtPath_text.Location = new System.Drawing.Point(218, 60);
+            this.txtPath_text.Name = "txtPath_text";
+            this.txtPath_text.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.txtPath_text.Size = new System.Drawing.Size(237, 35);
+            this.txtPath_text.TabIndex = 3;
+            this.txtPath_text.TextChanged += new System.EventHandler(this.txtPath_text_TextChanged);
+            // 
             // txt_browse_btn
             // 
             this.txt_browse_btn.ForeColor = System.Drawing.Color.Black;
@@ -103,6 +134,7 @@
             this.genTxt_check.TabIndex = 1;
             this.genTxt_check.Text = "Generate Txt";
             this.genTxt_check.UseVisualStyleBackColor = true;
+            this.genTxt_check.CheckedChanged += new System.EventHandler(this.genTxt_check_CheckedChanged);
             // 
             // onlyalfanum_check
             // 
@@ -114,6 +146,7 @@
             this.onlyalfanum_check.TabIndex = 0;
             this.onlyalfanum_check.Text = "Use only alfa-numeric characters";
             this.onlyalfanum_check.UseVisualStyleBackColor = true;
+            this.onlyalfanum_check.CheckedChanged += new System.EventHandler(this.onlyalfanum_check_CheckedChanged);
             // 
             // output_text
             // 
@@ -173,35 +206,6 @@
             this.gen_btn.Text = "Generate";
             this.gen_btn.UseVisualStyleBackColor = true;
             this.gen_btn.Click += new System.EventHandler(this.gen_btn_Click);
-            // 
-            // txtPath_text
-            // 
-            this.txtPath_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtPath_text.Location = new System.Drawing.Point(218, 60);
-            this.txtPath_text.Name = "txtPath_text";
-            this.txtPath_text.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.txtPath_text.Size = new System.Drawing.Size(237, 35);
-            this.txtPath_text.TabIndex = 3;
-            // 
-            // txtFileName_text
-            // 
-            this.txtFileName_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtFileName_text.Location = new System.Drawing.Point(576, 59);
-            this.txtFileName_text.Name = "txtFileName_text";
-            this.txtFileName_text.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.txtFileName_text.Size = new System.Drawing.Size(288, 35);
-            this.txtFileName_text.TabIndex = 4;
-            this.txtFileName_text.Text = "passGen.txt";
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(571, 18);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(244, 38);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Txt File name";
             // 
             // Form1
             // 
