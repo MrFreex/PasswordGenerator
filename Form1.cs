@@ -69,6 +69,7 @@ namespace Password_Generator
                 string xmlVer = _config.Root.Element("XMLVersion").Value.ToString().Replace("<XMLVersion>", "").Replace("</XMLVersion", "");
                 updatetxtDir = _config.Root.Element("Settings").Element("txtDir").Value.ToString().Replace("<txtDir>", "").Replace("</txtDir>", "");
                 txtFileName_text.Text = _config.Root.Element("Settings").Element("txtName").Value.ToString().Replace("<txtName>", "").Replace("</txtName>", "");
+                charNum_text.Text = _config.Root.Element("Settings").Element("charNum").Value.ToString().Replace("<charNum>", "").Replace("</charNum>", "");
 
                 if (xmlVer == currentVer)
                 {
